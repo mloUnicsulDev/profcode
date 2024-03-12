@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<!--
+        Site feito por: Matheus Leal de Oliveira
+        Última atualização feita em: 11/03/204
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Leal</title>
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Receitas do Leal</h1>
+        <nav>
+            <a href="index.html">Home</a> ||
+            <a href="receita.html">Receita</a> ||
+            <a href="video.html">Vídeo</a> ||
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <hr />
+
+    <!-- Corpo do site -->
+
+    <body>
+        <h2>Formulário para contato</h2>
+        <form name="dadosCliente" method="post" action="">
+            Nome: <input type="text" id="nome" name="nome" size="30" required /> <br>
+            Senha: <input type="password" id="senha" name="senha" size="10" /> <br>
+            E-mail: <input type="email" id="eemail" name="eemail" size="20" /> <br>
+            Sexo: <br>
+            <input type="radio" id="masc" name="sexo" value="M" /> masculino <br>
+            <input type="radio" id="fem" name="sexo" value="F" /> feminino <br>
+            <input type="radio" id="outro" name="sexo" value="O" /> outro <br> <br>
+            Preferências de receitas: <br>
+            <input type="checkbox" id="frutosdoMar" name="prefs" value="frutosdoMar" /> frutos do mar <br>
+            <input type="checkbox" id="massas" name="prefs" value="massas" /> massas <br>
+            <input type="checkbox" id="churrasco" name="prefs" value="churrasco" /> churrasco <br>
+            <input type="checkbox" id="lanches" name="prefs" value="lanches" /> lanches <br> <br>
+            Informe qual o seu problema com a receita do dia: <br>
+            <select name="reclamacaoCliente">
+                <option value="">problema com ingredientes</option>
+                <option value="">não entendi a receita</option>
+                <option value="">não entendi o preparo</option>
+                <option value="">tempo de preparo incorreto</option>
+                <option value="">outro</option>
+            </select>
+            <br><br>
+            Por último, descreva qual o seu problema: <br>
+            <textarea id="problemas" name="problemas" rows="12" cols="60"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <hr>
+        <div>
+            <h4>Caso tenha alguma dúvida:</h4>
+            <a href="/contato.html">Clique aqui!</a>
+        </div>
+    </footer>
+</body>
+
+</html>
